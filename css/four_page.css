@@ -1,0 +1,57 @@
+.four_page {
+    display: flex;
+    align-items: center;
+    color: #000;
+
+}
+
+.fr_page {
+    margin-left: 100px;
+}
+
+.img_fr{
+    width: 460px;
+    height: 474px;
+}
+
+.fr_title {
+    font-family: "Merriweather";
+
+}
+
+.ft_parafraph {
+    font-family: "Rubik";
+
+}
+
+.five_page{
+    background-color: #222F33;
+}
+
+.fr_title {
+   display: flex;
+   justify-content: space-between;
+}
+.img_fv {
+    background-image: url("/image/logo.svg");
+    width: 2rem;
+    height: 2rem;
+    
+   
+    
+}
+.fv_text{
+    word-spacing: 20px;
+}
+
+.fv_item{
+    padding-left: 10px;
+}
+.fv_logo{
+    display: flex;
+    align-items: center;
+}
+
+.none {
+    visibility: hidden;
+}
