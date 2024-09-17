@@ -5,14 +5,10 @@
 
 }
 
-.fr_page {
-    margin-left: 100px;
-}
-
 .img_fr{
-    width: 460px;
-    height: 430px;
-    margin-left: 150px;
+    width: 70%;
+    height: 68%;
+    margin-left: 8%;
 }
 
 .fr_title {
@@ -29,15 +25,11 @@
     background-color: #222F33;
 }
 
-.fr_title {
-   display: flex;
-   justify-content: space-between;
-}
 .img_fv {
     background-image: url("/image/logo.svg");
     width: 2rem;
     height: 2rem;
-    
+    object-fit: cover;
    
     
 }
@@ -53,6 +45,3 @@
     align-items: center;
 }
 
-.none {
-    visibility: hidden;
-}
