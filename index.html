@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <section class="hero container container__column">
+    <section class="hero container container__column  section__animation ">
         
         <header class="header">
            
@@ -50,7 +50,7 @@
 
         </div>
     </section>
-    <section class="second_page no_vertical_padding container container__section">
+    <section class="second_page no_vertical_padding container container__section section--active">
             <div class="sc_page vertical_padding ">
                 <h1 class="sc__titles">Duurzame materialen</h1>
                 <p class="sc_paragraph">All EcoCabins have a high insulation value, are produced
@@ -64,7 +64,7 @@
             </div>
     </section>
 
-    <section class="third_page">
+    <section class="third_page section--active">
         <h1 class="th_h">Innovative</h1>
         <div class="container container__section">
         
@@ -82,12 +82,13 @@
 
     </section>
 
-    <section class="four_page container container__section-wider">
+    <section class="four_page container container__section-wider section--active">
         
             <div class="sc_page container__row"  >
                 <img class="img_fr"src="/image/IMGwr.png"/>
             </div>
-            <article class="container container__row container__section container__space-around container__self-stretch">
+            <article class="container container__row container__section
+             container__space-around container__self-stretch ">
                 <div >
                     <h1 class = "fr_title">Wood</h1>
                     <p class="fr_paragraph">De draagconstructies van<br> EcoCabins bestaan uit<br> hout. Hout is duurzaam en.</p>
@@ -109,8 +110,8 @@
             
            
             </section>
-    <section class="five_page container__section" >
-        <div class="fr_title">
+    <section class="five_page container__section section--active" >
+        <div class="footer">
             <div><h3>info@eco-cabins.com</h3></div>
         
             <div class="fv_logo">
@@ -130,6 +131,23 @@
         document.body.classList.toggle("lock-scroll");
 		button.classList.toggle('is-active');
         burger_page.classList.toggle('burger-page__is-active')
+
 	};
 
+    const sections = document.getElementsByTagName("section");
+    const animation_min_height = 100;
+    function scroll_animation(){
+        const window_height =  window.innerHeight;
+        for(let i = 0; i < sections.length;i++){
+            const section_top = sections[i].getBoundingClientRect().top
+            if(window_height - section_top > animation_min_height){
+                sections[i].classList.add("section__active")
+                
+            } else { 
+                sections[i].classList.remove("section__active")
+            }
+        }
+        
+    }
+    document.addEventListener("scroll",scroll_animation)
 </script>

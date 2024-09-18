@@ -30,26 +30,38 @@
     gap: 20px;
     margin: 0;
     padding: 0;
+    gap: 3rem;
 }
 
 .header__nav-item {
     margin-right: 0;
+   
+}
+.header__nav-item:hover {
+    color:black
 }
 
 .header__contact {
+    border:  0.2rem solid #ffffff;
     border-radius: 0.5rem;
     padding: 0.7rem 1.5rem;
     color: #606B74;
     background-color: #fff;
     font-size: 1rem;
     text-decoration: none;
+    transition: background-color 0.3s ease;
+    
+}
+
+.header__contact:hover{
+    background-color: #8a8a8a00;
+    color: #fff;
+
 }
 
 .header__menu {
     display: none;
-
     cursor: pointer;
-
 }
 
 
@@ -88,7 +100,7 @@
     background: transparent;
     border-top: 4px solid;
     border-bottom: 4px solid;
-    color: #1c2174;
+    color: #fff;
     font-size: 0;
     transition: all 0.25s ease-in-out;
 }
@@ -108,7 +120,7 @@
 }
 
 button:hover {
-    color: #2b32b2;
+    color: #f5ff98;
 }
 
 button.is-active {
@@ -128,3 +140,4 @@ button {
     cursor: pointer;
     outline: none;
 }
+

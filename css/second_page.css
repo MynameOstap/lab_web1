@@ -33,5 +33,11 @@
     padding: 10px;
     font-size: 1rem;
     margin-top: 1rem;
-    display: inline-block; 
+    display: inline-block;
+    transition: background-color 0.5s ease;
+}
+
+.sc_button:hover{
+    background-color:#606B74 ;
+    color: white;
 }

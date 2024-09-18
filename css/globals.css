@@ -12,6 +12,7 @@ body {
 section {
     
     padding:2rem 10%;
+    opacity: 0;
 }
 
 
@@ -88,3 +89,21 @@ li {
     }
 }
 
+
+  
+.section__active{
+    animation: scroll_anim 1s linear;
+    opacity: 1;
+}
+
+@keyframes scroll_anim {
+    0%{
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100%{
+        opacity: 1;
+        transform:translateY(0px)
+
+    }
+}
